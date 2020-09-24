@@ -1,12 +1,14 @@
 server:
   port: 20000
 spring:
-  application:
-    name: King-Config
   profiles:
     active: dev
+  application:
+    name: KingCloud-Config
   cloud:
     nacos:
       config:
         server-addr: 127.0.0.1:8848
         file-extension: properties #yaml
+      discovery:
+        server-addr: 127.0.0.1:8848

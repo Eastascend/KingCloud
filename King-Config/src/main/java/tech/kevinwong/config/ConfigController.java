@@ -14,7 +14,7 @@ public class ConfigController {
     private boolean useLocalCache;
 
     /**
-     * http://localhost:20100/config/get
+     * http://localhost:20000/config/get
      */
     @RequestMapping("/get")
     public boolean get() {
