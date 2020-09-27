@@ -34,32 +34,36 @@
         <nacos-client.version>1.1.0</nacos-client.version>
         <nacos-config.version>0.2.1.RELEASE</nacos-config.version>
 
-        <druid.version>1.1.10</druid.version>
-        <mysql.version>5.1.45</mysql.version>
-        <hutool.version>4.4.5</hutool.version>
-        <mybatis-plus.version>3.1.0</mybatis-plus.version>
+        <mysql.version>8.0.19</mysql.version>
+        <hutool.version>5.4.3</hutool.version>
     </properties>
 
     <dependencies>
-        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-
-        <!--引入测试依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!--引入测试依赖-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <!--mysql 驱动-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
